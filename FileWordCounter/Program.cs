@@ -4,14 +4,14 @@ using System.Xml.Linq;
 
 class Program
 {
-    private static WordOccurenceDictionary wordOccurenceDictionary = new();
+    private static WordOccurenceDictionary wordOccurenceDictionary;
     private static string inputDirectory;
 
     public static async Task Main(string[] args)
     {
         inputDirectory = GetInputFromUser();
         var fileData = await GetDataFromFilesInDirectory();
-        CountOccurrenceForEachWordFromList(fileData);
+        wordOccurenceDictionary = CountOccurrenceForEachWordFromList(fileData);
         var excludedWordDictionary = ExcludeWordsFoundInExcludeFile();
         await GenerateFileForExludedWords(excludedWordDictionary);
         await GenerateFileForEachLetterInTheAplhabet();
@@ -22,9 +22,9 @@ class Program
         return await FileHandler.GetDataFromFilesInDirectory(inputDirectory);
     }
 
-    private static void CountOccurrenceForEachWordFromList(string[] fileData)
+    private static WordOccurenceDictionary CountOccurrenceForEachWordFromList(string[] fileData)
     {
-        WordOccurrenceCounter.CountOccurrenceForEachWordFromList(fileData, wordOccurenceDictionary.wordOccurrence);
+       return WordOccurrenceCounter.CountOccurrenceForEachWordFromList(fileData);
     }
     private static Dictionary<string,int> ExcludeWordsFoundInExcludeFile()
     {
@@ -35,7 +35,7 @@ class Program
             return default;
         }
         var excludeFileContent = FileHandler.GetTextsFromFile(excludePath);
-        var excludeWords = WordOccurrenceCounter.CountOccurrenceForEachWord(excludeFileContent);
+        var excludeWords = WordOccurrenceCounter.GetEachWordInContent(excludeFileContent);
        return  wordOccurenceDictionary.ExcludeWordsFromDictionary(excludeWords);
     }
 

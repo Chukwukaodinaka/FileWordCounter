@@ -17,19 +17,19 @@ namespace FileWordCounter
             wordOccurrence = new();
         }
 
-        public Dictionary<string,int> ExcludeWordsFromDictionary(List<WordCount> excludedWords) 
+        public Dictionary<string,int> ExcludeWordsFromDictionary(List<string> excludedWords) 
         {
             Dictionary<string,int> excludedWordsDictionary = new();
             excludedWords.ForEach(item =>
             {
-                if (wordOccurrence.ContainsKey(item.Word))
+                if (wordOccurrence.ContainsKey(item))
                 {
-                    excludedWordsDictionary[item.Word] = wordOccurrence[item.Word];
-                    wordOccurrence.Remove(item.Word);
+                    excludedWordsDictionary[item] = wordOccurrence[item];
+                    wordOccurrence.Remove(item);
                 }
                 else
                 {
-                    excludedWordsDictionary[item.Word] = 0;
+                    excludedWordsDictionary[item] = 0;
                 }
             });
             return excludedWordsDictionary;   

@@ -8,15 +8,6 @@ namespace FileWordCounter
 {
     public class FileHandler
     {
-        private static string[]? GetFilesOfDirectory(string? directoryPath)
-        {
-            if (!Directory.Exists(directoryPath))
-            {
-                return default;
-            }
-            return Directory.GetFiles(directoryPath);
-        }
-
         public static async Task<string[]> GetDataFromFilesInDirectory(string directory)
         {
             List<Task> tasks = new();
@@ -54,21 +45,6 @@ namespace FileWordCounter
             return File.ReadAllText(path);
         }
 
-        private static bool FileExistsAndIsNotExclude(string filePath)
-        {
-            if (!File.Exists(filePath))
-            {
-                return false;
-            }
-
-            if (filePath.EndsWith("exclude.txt"))
-            {
-                return false;
-            }
-
-            return true;
-        }
-
         public static void CreateFile(string fileName, string[] fileContent)
         {
             try
@@ -97,6 +73,30 @@ namespace FileWordCounter
                 fileContent.Add($"{word} {count}");
             }
             return fileContent.ToArray();
+        }
+
+        private static string[]? GetFilesOfDirectory(string? directoryPath)
+        {
+            if (!Directory.Exists(directoryPath))
+            {
+                return default;
+            }
+            return Directory.GetFiles(directoryPath);
+        }
+
+        private static bool FileExistsAndIsNotExclude(string filePath)
+        {
+            if (!File.Exists(filePath))
+            {
+                return false;
+            }
+
+            if (filePath.EndsWith("exclude.txt"))
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }
