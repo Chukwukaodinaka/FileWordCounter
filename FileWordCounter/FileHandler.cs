@@ -29,10 +29,6 @@ namespace FileWordCounter
                 
             }
             await Task.WhenAll(tasks);
-            foreach(var fileData in fileDatas)
-            {
-                Console.WriteLine(fileData[0]);
-            }
             return fileDatas.ToArray();
         }
 
