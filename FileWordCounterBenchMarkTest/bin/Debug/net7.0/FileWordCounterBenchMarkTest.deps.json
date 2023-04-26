@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "FileWordCounterBenchMarkTest/1.0.0": {
+        "dependencies": {
+          "FileWordCounter": "1.0.0"
+        },
+        "runtime": {
+          "FileWordCounterBenchMarkTest.dll": {}
+        }
+      },
+      "FileWordCounter/1.0.0": {
+        "runtime": {
+          "FileWordCounter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FileWordCounterBenchMarkTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileWordCounter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

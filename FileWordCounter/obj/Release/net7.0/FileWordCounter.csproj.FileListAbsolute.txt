@@ -1,0 +1,15 @@
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\bin\Release\net7.0\FileWordCounter.exe
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\bin\Release\net7.0\FileWordCounter.deps.json
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\bin\Release\net7.0\FileWordCounter.runtimeconfig.json
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\bin\Release\net7.0\FileWordCounter.dll
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\bin\Release\net7.0\FileWordCounter.pdb
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\FileWordCounter.csproj.AssemblyReference.cache
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\FileWordCounter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\FileWordCounter.AssemblyInfoInputs.cache
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\FileWordCounter.AssemblyInfo.cs
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\FileWordCounter.csproj.CoreCompileInputs.cache
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\FileWordCounter.dll
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\refint\FileWordCounter.dll
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\FileWordCounter.pdb
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\FileWordCounter.genruntimeconfig.cache
+C:\Users\esc\source\repos\FileWordCounter\FileWordCounter\obj\Release\net7.0\ref\FileWordCounter.dll

@@ -63,6 +63,6 @@ namespace FileWordCounter
            return Regex.Matches(content, @"\w+").Cast<Match>()
                  .Select(x => FirstLetterToUppercase(x.Value))
                  .ToList(); 
-        }
+        }        
     }
 }
