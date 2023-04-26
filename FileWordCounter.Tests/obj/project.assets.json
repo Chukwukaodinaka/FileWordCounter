@@ -4641,9 +4641,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\esc\\source\\repos\\FileWordCounter\\FileWordCounter.Tests\\FileWordCounter.Tests.vbproj",
+      "projectUniqueName": "C:\\Users\\esc\\source\\repos\\FileWordCounter\\FileWordCounter.Tests\\FileWordCounter.Tests.csproj",
       "projectName": "FileWordCounter.Tests",
-      "projectPath": "C:\\Users\\esc\\source\\repos\\FileWordCounter\\FileWordCounter.Tests\\FileWordCounter.Tests.vbproj",
+      "projectPath": "C:\\Users\\esc\\source\\repos\\FileWordCounter\\FileWordCounter.Tests\\FileWordCounter.Tests.csproj",
       "packagesPath": "C:\\Users\\esc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\esc\\source\\repos\\FileWordCounter\\FileWordCounter.Tests\\obj\\",
       "projectStyle": "PackageReference",

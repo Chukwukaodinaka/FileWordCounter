@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4zC+TyHpc9ZLcsYTtnZYbpeU4vabsiJLQ40JsKWrUSOQi+69lnTTuzFhyh9qnrqSCSQqsZWsWHEJpJALE+qmUw==",
+  "dgSpecHash": "X/7duRmY6jivPYPUYT1+8OxAcROBo0jZQkImCFht9U/sBtaFWw47emvbK5A6BmKlP2YZ/cXYaN/lZYWv0q61QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\esc\\source\\repos\\FileWordCounter\\FileWordCounter.Tests\\FileWordCounter.Tests.vbproj",
+  "projectFilePath": "C:\\Users\\esc\\source\\repos\\FileWordCounter\\FileWordCounter.Tests\\FileWordCounter.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\esc\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\esc\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

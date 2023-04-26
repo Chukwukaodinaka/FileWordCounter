@@ -45,7 +45,7 @@ namespace FileWordCounter
             Dictionary<string, int> wordOccurence = new();
 
              Regex.Matches(content, @"\w+").Cast<Match>()
-                 .Select((m, pos) => new { Word = FirstLetterToUppercase(m.Value), Pos = pos })
+                 .Select((m, pos) => new { Word = ToProperCases(m.Value), Pos = pos })
                  .GroupBy(s => s.Word, StringComparer.CurrentCultureIgnoreCase)
                  .ToList()
                  .ForEach(x => wordOccurence.Add(x.Key, x.Select(z => z.Pos).ToList().Count));
@@ -53,15 +53,20 @@ namespace FileWordCounter
             return wordOccurence;
         }
 
-        private static string FirstLetterToUppercase(string value)
+        private static string ToProperCases(string value)
         {
-            return char.ToUpper(value[0]) + value.Substring(1);
+            return FirstLetterToUppercase(value) + value.Substring(1).ToLower();
+        }
+
+        private static char FirstLetterToUppercase(string value)
+        {
+            return char.ToUpper(value[0]) ;
         }
 
         public static List<string> GetEachWordInContent(string content)
         {
            return Regex.Matches(content, @"\w+").Cast<Match>()
-                 .Select(x => FirstLetterToUppercase(x.Value))
+                 .Select(x => ToProperCases(x.Value))
                  .ToList(); 
         }        
     }
