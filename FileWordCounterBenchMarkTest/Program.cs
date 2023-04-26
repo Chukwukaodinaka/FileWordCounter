@@ -12,26 +12,22 @@ public class Program
 
     public class FileRead
     {
-        public string filePath = @"C:\Users\esc\OneDrive\Documents\txtdocs\sample1.txt";
+        public string filePath = @"C:\Users\esc\OneDrive\Documents\txtdocs\sample-2mb-text-file.txt";
 
         [Benchmark]
-        public List<string> GetEachWordInContentUsingReadAsText()
+        public List<string> GetEachWordInContentUsingRegex()
         {
-            //return Regex.Matches(File.ReadAllText(filePath), @"\w+").Cast<Match>()
-            //      .Select(x => x.Value)
-            //      .ToList();
-
-            char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
-
-            return File.ReadAllText(filePath).Split(delimiterChars).ToList();
+            return Regex.Matches(File.ReadAllText(filePath), @"\w+").Cast<Match>()
+                  .Select(x => x.Value)
+                  .ToList();
         }
 
         [Benchmark]
-        public  List<string> GetEachWordInContentUsingReadToEnd()
+        public  List<string> GetEachWordInContentUsingStringReader()
         {
             char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
 
-            StringReader reader = new(filePath);
+            StringReader reader = new(File.ReadAllText(filePath));
             return reader.ReadToEnd().Split(delimiterChars).ToList();
         }
     }

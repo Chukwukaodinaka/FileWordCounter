@@ -8,7 +8,7 @@ Intel Core i7-7600U CPU 2.80GHz (Kaby Lake), 1 CPU, 4 logical and 2 physical cor
 
 
 ```
-|                              Method |        Mean |       Error |      StdDev |
-|------------------------------------ |------------:|------------:|------------:|
-| GetEachWordInContentUsingReadAsText | 99,872.9 ns | 1,325.60 ns | 1,175.11 ns |
-|  GetEachWordInContentUsingReadToEnd |    268.9 ns |     5.33 ns |     8.13 ns |
+|                              Method |      Mean |     Error |    StdDev |    Median |
+|------------------------------------ |----------:|----------:|----------:|----------:|
+| GetEachWordInContentUsingReadAsText | 396.25 ms | 13.922 ms | 41.050 ms | 381.57 ms |
+|  GetEachWordInContentUsingReadToEnd |  79.53 ms |  3.189 ms |  9.354 ms |  79.41 ms |

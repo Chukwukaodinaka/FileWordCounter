@@ -1,0 +1,5 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\esc\source\repos\FileWordCounter\FileWordCounterBenchMarkTest\bin\Release\net7.0\c9c6f05b-5bfe-48f4-bfc6-566e3195cf3f
