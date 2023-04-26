@@ -1,5 +1,4 @@
-﻿using FileWordCounter;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Attributes;
 

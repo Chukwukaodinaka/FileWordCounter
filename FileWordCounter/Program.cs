@@ -1,6 +1,4 @@
 ﻿using FileWordCounter;
-using System.Text.RegularExpressions;
-using System.Xml.Linq;
 
 class Program
 {
